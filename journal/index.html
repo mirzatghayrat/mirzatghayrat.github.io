@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>Journal — Mirzat Ghayrat</title><meta name="description" content="Notes from the desk, and from the day job. Mostly questions."><link rel="canonical" href="https://mirzatghayrat.github.io/journal/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Journal — Mirzat Ghayrat" href="/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="en_US"><meta property="og:title" content="Journal — Mirzat Ghayrat"><meta property="og:description" content="Notes from the desk, and from the day job. Mostly questions."><meta property="og:url" content="https://mirzatghayrat.github.io/journal/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Journal — Mirzat Ghayrat"><meta name="twitter:description" content="Notes from the desk, and from the day job. Mostly questions."><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.Zx5H1p9K.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">Skip to content</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="Main navigation"><ul><li><a href="/#desk" data-nav-link data-jump-target="desk">Career</a></li><li><a href="/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/#street" data-nav-link data-jump-target="street">Projects</a></li><li><a href="/#lot" data-nav-link data-jump-target="lot">Journal</a></li><li><a href="/#film" data-nav-link data-jump-target="film">Film</a></li><li><a href="/#home" data-nav-link data-jump-target="home">Say hello</a></li><li class="nav__lang"><a class="lang-toggle" href="/zh/journal/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></li></ul></nav></div></header><main id="main" class="journal container"><p class="eyebrow">Journal</p><h1 id="journal-title">Still figuring things out.</h1><p class="lede">Notes from the desk, and from the day job. Mostly questions.</p><ol class="journal__list"><li><a href="/journal/what-building-arslan-changed/">What building Arslan changed about how I think.</a><p>Arslan started as a chat window I kept wanting to change. Somewhere along the way it changed how I think, and these notes are what I can name so far.</p><a class="caption" href="https://www.linkedin.com/in/mirzatghayrat/" target="_blank" rel="noopener">Adapted from a reflection first published on LinkedIn ↗</a></li></ol></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/">Aralem</a><nav class="footer__nav" aria-label="Main navigation"><a href="/#desk">Career</a><a href="/#arslan">Arslan</a><a href="/#street">Projects</a><a href="/#lot">Journal</a><a href="/#film">Film</a><a href="/#home">Say hello</a><a href="/rss.xml">RSS</a></nav><a class="lang-toggle" href="/zh/journal/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · Concept artwork. App screens are real development captures.</p><a href="#main">Back to the top ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.BhAA_Gqs.js"></script></body></html>
