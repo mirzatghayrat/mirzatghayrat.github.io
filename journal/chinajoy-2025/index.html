@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>A user returned. Did growth happen? — Mirzat Ghayrat</title><meta name="description" content="Beyond bringing people back: how much of a conversion did advertising actually create?"><link rel="canonical" href="https://mirzatghayrat.github.io/journal/chinajoy-2025/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/chinajoy-2025/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/chinajoy-2025/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/chinajoy-2025/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Journal — Mirzat Ghayrat" href="/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="en_US"><meta property="og:title" content="A user returned. Did growth happen? — Mirzat Ghayrat"><meta property="og:description" content="Beyond bringing people back: how much of a conversion did advertising actually create?"><meta property="og:url" content="https://mirzatghayrat.github.io/journal/chinajoy-2025/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="A user returned. Did growth happen? — Mirzat Ghayrat"><meta name="twitter:description" content="Beyond bringing people back: how much of a conversion did advertising actually create?"><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.CR-1sDPd.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">Skip to content</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="Main navigation"><ul><li><a href="/#desk" data-nav-link data-jump-target="desk">Career</a></li><li><a href="/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/#street" data-nav-link data-jump-target="street">Projects</a></li><li><a href="/#lot" data-nav-link data-jump-target="lot">Journal</a></li><li><a href="/#film" data-nav-link data-jump-target="film">Film</a></li><li><a href="/#home" data-nav-link data-jump-target="home">Say hello</a></li><li class="nav__lang"><a class="lang-toggle" href="/zh/journal/chinajoy-2025/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></li></ul></nav></div></header><main id="main" class="note container"><a class="link" href="/journal/">← Back to the notes</a><h1 id="note-title">A user returned. Did growth happen?</h1><p class="caption"><a href="https://www.linkedin.com/posts/remerge_we-had-an-incredible-time-at-chinajoy-2025-activity-7360599619803693056-emcn" target="_blank" rel="noopener">Adapted from the ChinaJoy 2025 field record ↗</a></p><article class="prose"><p>At ChinaJoy 2025 in Shanghai, I joined my Remerge colleagues in conversations with app marketers, game developers and partners about mobile growth. That field record is a useful starting point for a more specific question: when a user returns, what lets us conclude that growth happened?</p>
+<h2 id="observing-a-conversion-does-not-explain-it">Observing a conversion does not explain it</h2>
+<p>Imagine someone already planning to open an app over the weekend. They see an ad on Friday and make a purchase on Saturday. Both events happened. Their sequence alone does not tell us whether the purchase would have happened without the ad.</p>
+<p>Attribution records relationships between advertising interactions and conversions under defined rules. It supports everyday reporting and optimization. Incrementality asks what happened in addition to what would have happened without the campaign. <a href="https://support.google.com/google-ads/answer/14102450?hl=en">Google’s Conversion Lift documentation</a> distinguishes these measures.</p>
+<p>This matters to me because it changes where a budget discussion begins. Treating a recorded result as a created result can let an attractive number answer a question we have not actually tested.</p>
+<h2 id="the-likeliest-returner-may-not-need-the-reminder-most">The likeliest returner may not need the reminder most</h2>
+<p>Retargeting reaches people who already have a relationship with a product. Suppose some have strong intentions to return anyway. Their good conversion performance does not, by itself, establish that more advertising to them is the best next investment.</p>
+<p>I find it more useful to treat audience segments as hypotheses. Whose behavior might a reminder change? Who is already coming back? Who needs a product problem fixed? Click-through rate cannot settle all three questions.</p>
+<p>The same reasoning applies to creative. A click may show that a reminder captured attention. What happens after arrival helps tell us whether that attention turned into valuable use.</p>
+<h2 id="an-experiment-still-needs-questions">An experiment still needs questions</h2>
+<p><a href="https://www.remerge.io/incrementality">Remerge’s incrementality approach</a> uses randomized controls to estimate additional advertising impact. The value, as I see it, is establishing a comparison that can challenge a decision.</p>
+<p>How that comparison is formed, how long it runs and what it measures all matter. <a href="https://support.google.com/google-ads/answer/12005564?hl=en">Google’s setup documentation</a> identifies traffic allocation, duration and budget among the factors affecting study power. An inconclusive result should remain distinguishable from evidence of no effect.</p>
+<p>There is also the question of scope. A result for one audience during one period can inform that allocation. Extending it to every audience and every period requires more evidence.</p>
+<h2 id="bring-the-discussion-back-to-the-product">Bring the discussion back to the product</h2>
+<p>Building apps makes me want to discuss growth and product decisions together. A reminder offers another chance to try something. Whether the returning user can finish a task more easily, or has a reason to stay, is still a product question.</p>
+<p>I want a growth discussion to end with a concrete choice: whom to reach again, which repeated reminder to stop, or which source of friction to fix first.</p>
+<p>That is where measurement becomes useful to me: in deciding where the next effort should go.</p>
+</article><nav class="note__nav"><a href="/#lot">← The empty lot</a><a href="/journal/connecting-tools-deliberately/">Connecting a tool is a product decision. →</a></nav></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/">Aralem</a><nav class="footer__nav" aria-label="Main navigation"><a href="/#desk">Career</a><a href="/#arslan">Arslan</a><a href="/#street">Projects</a><a href="/#lot">Journal</a><a href="/#film">Film</a><a href="/#home">Say hello</a><a href="/rss.xml">RSS</a></nav><a class="lang-toggle" href="/zh/journal/chinajoy-2025/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · The scenes and character are digitally created. Project screens come from actual development builds.</p><a href="#main">Back to the top ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D-KrrRt4.js"></script></body></html>

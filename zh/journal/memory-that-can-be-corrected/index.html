@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>记住之后，还要能改。 — Mirzat Ghayrat</title><meta name="description" content="长期记忆的难题，不只在于记住多少，还在于信息过时、理解错误之后，系统怎样恢复。"><link rel="canonical" href="https://mirzatghayrat.github.io/zh/journal/memory-that-can-be-corrected/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/memory-that-can-be-corrected/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="笔记 — Mirzat Ghayrat" href="/zh/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="记住之后，还要能改。 — Mirzat Ghayrat"><meta property="og:description" content="长期记忆的难题，不只在于记住多少，还在于信息过时、理解错误之后，系统怎样恢复。"><meta property="og:url" content="https://mirzatghayrat.github.io/zh/journal/memory-that-can-be-corrected/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem 的数字工作台：夜色中的书桌与亮着屏幕的复古电脑。"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="记住之后，还要能改。 — Mirzat Ghayrat"><meta name="twitter:description" content="长期记忆的难题，不只在于记住多少，还在于信息过时、理解错误之后，系统怎样恢复。"><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem 的数字工作台：夜色中的书桌与亮着屏幕的复古电脑。"><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&display=swap"><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.CR-1sDPd.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">跳到正文</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/zh/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="打开菜单" data-label-open="打开菜单" data-label-close="关闭菜单"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="主导航"><ul><li><a href="/zh/#desk" data-nav-link data-jump-target="desk">经历</a></li><li><a href="/zh/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/zh/#street" data-nav-link data-jump-target="street">作品</a></li><li><a href="/zh/#lot" data-nav-link data-jump-target="lot">笔记</a></li><li><a href="/zh/#film" data-nav-link data-jump-target="film">短片</a></li><li><a href="/zh/#home" data-nav-link data-jump-target="home">打个招呼</a></li><li class="nav__lang"><a class="lang-toggle" href="/journal/memory-that-can-be-corrected/" hreflang="en" lang="en" data-lang-toggle data-lang-target="en" aria-label="切换到英文">EN</a></li></ul></nav></div></header><main id="main" class="note container"><a class="link" href="/zh/journal/">← 回到笔记</a><h1 id="note-title">记住之后，还要能改。</h1><p class="caption"><a href="https://github.com/mirzatghayrat/arslan#a-second-brain-filterable-by-start-time" target="_blank" rel="noopener">改写自Arslan 的公开设计文档 ↗</a></p><article class="prose"><p>让 AI 记住偏好，第一次体验通常很直接：不用再说一遍了。但使用时间长了，另一个问题会出现——如果偏好变了，或者它从一开始就理解错了呢？</p>
+<p>在我看来，长期记忆把一次对话中的判断，变成了以后许多任务的前提。它减少重复说明，也可能让一个错误被反复使用。</p>
+<h2 id="一句话能代表多长时间">一句话，能代表多长时间？</h2>
+<p>设想用户说：“这次给客户的文案，写得正式一点。”如果系统把它记成“用户喜欢正式文风”，下一次写给朋友的消息也可能受到影响。</p>
+<p>这个例子里的问题，是适用范围被扩大了。一次任务的要求、一个项目的惯例和长期偏好，不能仅仅因为表达相似，就获得同样的有效期。</p>
+<p>所以，评价记忆时，我会先问：这条信息从哪里来，适用于什么情况，哪些变化会让它失效？存储和检索解决信息能不能被找到；这些问题决定找到之后该不该相信它。</p>
+<h2 id="纠正也是一种日常操作">纠正，也是一种日常操作</h2>
+<p>Arslan 会从对话中整理记忆，并在任务中检索它们。主代理更新记忆时，会保留被替代的内容，允许恢复；模型提出删除时，要先进入待处理列表；子代理对共享记忆提出的修改，也会交给用户查看。</p>
+<p>这些机制让改动有一个可以检查的位置。它们并不能证明记忆一定正确，却能降低发现错误之后的处理难度。</p>
+<p>我更在意的是这种处理能否足够轻：用户不应该为了纠正一句错误总结，重新解释整个项目。能看见哪里改了、恢复哪一条，以及之后的任务会怎样使用它，都是值得检验的体验。</p>
+<h2 id="留下历史也会增加负担">留下历史，也会增加负担</h2>
+<p>保留旧信息有助于理解变化，但旧信息如果重新混进当前判断，也可能制造矛盾。保留多少、如何区分已经过时与仍然有效，本身就是取舍。</p>
+<p>Arslan 的记忆图谱可以按生效时间筛选，但它还不是完整的历史回放。已删除的内容和原地修改，不一定留下可还原的记录。这个能力边界需要明确，不能因为界面上能选择时间，就让人以为任何过去的状态都可以恢复。</p>
+<p>同样，“删除”也值得追问：如果一个错误已经影响了别的总结，删掉最初那条信息，是否足以消除后续影响？这是进一步评价记忆系统时需要面对的问题，我不会把现有功能当成完整答案。</p>
+<h2 id="衡量修正的成本">衡量修正的成本</h2>
+<p>比起记忆条数，我更想观察三件事：旧信息多久会被发现不再适用，用户要花多少力气修正，以及同样的误解会不会再次出现。</p>
+<p>这些问题把第二大脑从“替我多记一点”，推向“让我更容易继续工作”。长期使用的价值，也许就在这里：系统能够积累理解，同时给理解留下被修正的空间。</p>
+</article><nav class="note__nav"><a href="/zh/#lot">← 回到空地</a><a href="/zh/journal/what-building-arslan-changed/">做 Arslan 改变了我怎么想事情。 →</a></nav></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/zh/">Aralem</a><nav class="footer__nav" aria-label="主导航"><a href="/zh/#desk">经历</a><a href="/zh/#arslan">Arslan</a><a href="/zh/#street">作品</a><a href="/zh/#lot">笔记</a><a href="/zh/#film">短片</a><a href="/zh/#home">打个招呼</a><a href="/zh/rss.xml">RSS</a></nav><a class="lang-toggle" href="/journal/memory-that-can-be-corrected/" hreflang="en" lang="en" data-lang-toggle data-lang-target="en" aria-label="切换到英文">EN</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · 场景与角色为数字创作；项目画面来自实际开发版本。</p><a href="#main">回到开头 ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D-KrrRt4.js"></script></body></html>

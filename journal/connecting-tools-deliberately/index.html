@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>Connecting a tool is a product decision. — Mirzat Ghayrat</title><meta name="description" content="More tools add capability. Understanding that capability, and deciding who can use it, are design problems too."><link rel="canonical" href="https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/connecting-tools-deliberately/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Journal — Mirzat Ghayrat" href="/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="en_US"><meta property="og:title" content="Connecting a tool is a product decision. — Mirzat Ghayrat"><meta property="og:description" content="More tools add capability. Understanding that capability, and deciding who can use it, are design problems too."><meta property="og:url" content="https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Connecting a tool is a product decision. — Mirzat Ghayrat"><meta name="twitter:description" content="More tools add capability. Understanding that capability, and deciding who can use it, are design problems too."><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.CR-1sDPd.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">Skip to content</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="Main navigation"><ul><li><a href="/#desk" data-nav-link data-jump-target="desk">Career</a></li><li><a href="/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/#street" data-nav-link data-jump-target="street">Projects</a></li><li><a href="/#lot" data-nav-link data-jump-target="lot">Journal</a></li><li><a href="/#film" data-nav-link data-jump-target="film">Film</a></li><li><a href="/#home" data-nav-link data-jump-target="home">Say hello</a></li><li class="nav__lang"><a class="lang-toggle" href="/zh/journal/connecting-tools-deliberately/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></li></ul></nav></div></header><main id="main" class="note container"><a class="link" href="/journal/">← Back to the notes</a><h1 id="note-title">Connecting a tool is a product decision.</h1><p class="caption"><a href="https://github.com/mirzatghayrat/arslan-starter-pack" target="_blank" rel="noopener">Adapted from the arslan-starter-pack example ↗</a></p><article class="prose"><p>I published a small Arslan plugin example: knowledge-graph memory, Brave Search and a structured research skill. It raises a question worth returning to: when someone connects a capability, what exactly have they agreed to?</p>
+<p>An interface that only says “connected” may omit the part the user most needs to understand.</p>
+<h2 id="separate-the-actions-that-mean-different-things">Separate the actions that mean different things</h2>
+<p>Discovering a tool, reading its configuration, starting a service and authorizing an agent to use it are different actions. They can belong to one smooth flow while retaining their distinct meanings.</p>
+<p>The example manifest describes launch commands, required credential fields and skill locations. Users enter keys locally. Reading the configuration does not start the service; connecting it does. Specialist agents get access through a separate switch.</p>
+<p>That distinction keeps curiosity about a tool from silently becoming permission for every agent to use it.</p>
+<h2 id="more-controls-can-mean-less-understanding">More controls can mean less understanding</h2>
+<p>Asking for confirmation at every step adds reading and decision work. Repetitive prompts can bury the decision that actually deserves attention.</p>
+<p>I would not judge a permission interface by its number of buttons. I would ask whether a step introduces an unexpected change: what will be read, what might be altered and whether the effects can be undone.</p>
+<p>Consider a hypothetical research workflow. Searching public pages, reading a personal knowledge base and sending the resulting report outside the system have different consequences. A single “allow tools” choice explains very little about those differences.</p>
+<h2 id="boundaries-need-to-survive-delegation">Boundaries need to survive delegation</h2>
+<p>A multi-agent system makes this concrete. If someone gives the host agent a capability, does that automatically let it pass the same capability to any specialist?</p>
+<p>The plugin example makes that choice visible through a separate switch. It does not settle every question about delegation. A good interface should also help someone see who currently has access, why it is needed and where it can be stopped.</p>
+<p>These are criteria I would use to assess the design. The existence of a switch does not establish that all of them have been met.</p>
+<h2 id="successful-connection-is-the-beginning">Successful connection is the beginning</h2>
+<p>Tools fail, credentials expire and people change their minds. If a product explains how to connect but leaves disconnection and its consequences unclear, the user still has limited control over their environment.</p>
+<p>I would rather evaluate the experience by whether someone can anticipate the next action and recover when something goes wrong.</p>
+<p>As a system gains capabilities, that understanding becomes more valuable. It gives people a reason to keep using the system, with boundaries they can understand.</p>
+</article><nav class="note__nav"><a href="/#lot">← The empty lot</a><a href="/journal/memory-that-can-be-corrected/">Remembering is only half the job. →</a></nav></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/">Aralem</a><nav class="footer__nav" aria-label="Main navigation"><a href="/#desk">Career</a><a href="/#arslan">Arslan</a><a href="/#street">Projects</a><a href="/#lot">Journal</a><a href="/#film">Film</a><a href="/#home">Say hello</a><a href="/rss.xml">RSS</a></nav><a class="lang-toggle" href="/zh/journal/connecting-tools-deliberately/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · The scenes and character are digitally created. Project screens come from actual development builds.</p><a href="#main">Back to the top ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D-KrrRt4.js"></script></body></html>

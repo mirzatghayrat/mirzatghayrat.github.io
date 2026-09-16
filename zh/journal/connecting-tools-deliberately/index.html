@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>接入一个工具，也是在做一次选择。 — Mirzat Ghayrat</title><meta name="description" content="接入工具扩展了系统的能力。谁理解这些能力、谁能使用它们，同样是产品设计问题。"><link rel="canonical" href="https://mirzatghayrat.github.io/zh/journal/connecting-tools-deliberately/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/connecting-tools-deliberately/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="笔记 — Mirzat Ghayrat" href="/zh/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="接入一个工具，也是在做一次选择。 — Mirzat Ghayrat"><meta property="og:description" content="接入工具扩展了系统的能力。谁理解这些能力、谁能使用它们，同样是产品设计问题。"><meta property="og:url" content="https://mirzatghayrat.github.io/zh/journal/connecting-tools-deliberately/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem 的数字工作台：夜色中的书桌与亮着屏幕的复古电脑。"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="接入一个工具，也是在做一次选择。 — Mirzat Ghayrat"><meta name="twitter:description" content="接入工具扩展了系统的能力。谁理解这些能力、谁能使用它们，同样是产品设计问题。"><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem 的数字工作台：夜色中的书桌与亮着屏幕的复古电脑。"><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&display=swap"><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.CR-1sDPd.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">跳到正文</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/zh/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="打开菜单" data-label-open="打开菜单" data-label-close="关闭菜单"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="主导航"><ul><li><a href="/zh/#desk" data-nav-link data-jump-target="desk">经历</a></li><li><a href="/zh/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/zh/#street" data-nav-link data-jump-target="street">作品</a></li><li><a href="/zh/#lot" data-nav-link data-jump-target="lot">笔记</a></li><li><a href="/zh/#film" data-nav-link data-jump-target="film">短片</a></li><li><a href="/zh/#home" data-nav-link data-jump-target="home">打个招呼</a></li><li class="nav__lang"><a class="lang-toggle" href="/journal/connecting-tools-deliberately/" hreflang="en" lang="en" data-lang-toggle data-lang-target="en" aria-label="切换到英文">EN</a></li></ul></nav></div></header><main id="main" class="note container"><a class="link" href="/zh/journal/">← 回到笔记</a><h1 id="note-title">接入一个工具，也是在做一次选择。</h1><p class="caption"><a href="https://github.com/mirzatghayrat/arslan-starter-pack" target="_blank" rel="noopener">改写自arslan-starter-pack 插件示例 ↗</a></p><article class="prose"><p>我为 Arslan 放了一个公开的插件示例：知识图谱记忆、Brave 搜索，以及一套结构化研究流程。它很小，却把一个值得反复想的问题摆了出来：当用户接入一种能力时，他究竟同意了什么？</p>
+<p>如果一个界面只告诉人“已连接”，它省略的可能正是用户最需要理解的部分。</p>
+<h2 id="把几个不同的动作拆开">把几个不同的动作拆开</h2>
+<p>发现一个工具、读取它的配置、启动服务、允许代理使用它，是不同的动作。它们可以在一个顺畅的流程里完成，但各自的含义需要清楚。</p>
+<p>这个插件的配置描述启动方式、需要填写的密钥名称和技能文件的位置。密钥由用户在本机填写。读取配置不会启动服务；连接之后，服务才开始运行。子代理能否使用它，则由单独的开关控制。</p>
+<p>这样拆分的价值，是让“我想了解这个工具”不会悄悄变成“我同意所有代理都能使用它”。</p>
+<h2 id="控制越多理解也可能越少">控制越多，理解也可能越少</h2>
+<p>给每一步加确认，看起来很谨慎，但也会增加阅读和判断的负担。如果每次都弹出相似的问题，真正需要注意的那一次，反而容易被埋在重复操作里。</p>
+<p>因此，我不认为按钮数量可以衡量一个权限界面的好坏。更值得问的是：这一步是否发生了用户没有预期到的变化？它会读取什么、改变什么，影响能不能收回？</p>
+<p>以一个假设的研究流程为例，搜索公开网页、读取个人资料库和向外发送研究结果，带来的影响并不相同。把它们都概括成“允许使用工具”，会让这个选项失去解释力。</p>
+<h2 id="委托以后边界还要成立">委托以后，边界还要成立</h2>
+<p>多代理系统让问题更具体：用户把能力交给主代理，是否意味着它也能把同样的能力交给任何子代理？</p>
+<p>Arslan 的插件示例用一个独立开关表达这层选择。它还没有回答所有关于委托的问题，却至少让这一步变得可见。进一步想，好的界面还应该帮助人理解：当前谁有访问权，为什么需要它，以及在哪里可以停止。</p>
+<p>这些是我用来判断设计的要求，不能因为存在一个开关，就认定它们都已经解决。</p>
+<h2 id="连接成功之后体验才开始">连接成功之后，体验才开始</h2>
+<p>工具会出错，连接可能失效，用户也会改变主意。如果系统只能解释如何接入，却说不清怎样退出、退出后哪些工作会受影响，那么用户仍然很难掌握自己的环境。</p>
+<p>所以我更想用另一种方式评价工具体验：用户能否预期它接下来会做什么；出现问题时，能否找到原因并收回影响。</p>
+<p>当能力不断增加，这种可理解性会变得更有价值。它让人愿意继续使用一个系统，也让委托有了边界。</p>
+</article><nav class="note__nav"><a href="/zh/#lot">← 回到空地</a><a href="/zh/journal/memory-that-can-be-corrected/">记住之后，还要能改。 →</a></nav></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/zh/">Aralem</a><nav class="footer__nav" aria-label="主导航"><a href="/zh/#desk">经历</a><a href="/zh/#arslan">Arslan</a><a href="/zh/#street">作品</a><a href="/zh/#lot">笔记</a><a href="/zh/#film">短片</a><a href="/zh/#home">打个招呼</a><a href="/zh/rss.xml">RSS</a></nav><a class="lang-toggle" href="/journal/connecting-tools-deliberately/" hreflang="en" lang="en" data-lang-toggle data-lang-target="en" aria-label="切换到英文">EN</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · 场景与角色为数字创作；项目画面来自实际开发版本。</p><a href="#main">回到开头 ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D-KrrRt4.js"></script></body></html>

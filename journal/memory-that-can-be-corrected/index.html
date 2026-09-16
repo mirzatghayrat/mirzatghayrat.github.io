@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>Remembering is only half the job. — Mirzat Ghayrat</title><meta name="description" content="Long-term memory needs a way to recover when information expires or an interpretation was wrong from the start."><link rel="canonical" href="https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/memory-that-can-be-corrected/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Journal — Mirzat Ghayrat" href="/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="en_US"><meta property="og:title" content="Remembering is only half the job. — Mirzat Ghayrat"><meta property="og:description" content="Long-term memory needs a way to recover when information expires or an interpretation was wrong from the start."><meta property="og:url" content="https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Remembering is only half the job. — Mirzat Ghayrat"><meta name="twitter:description" content="Long-term memory needs a way to recover when information expires or an interpretation was wrong from the start."><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem’s digital workspace: a glowing retro computer on a late-night desk."><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.CR-1sDPd.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">Skip to content</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="Main navigation"><ul><li><a href="/#desk" data-nav-link data-jump-target="desk">Career</a></li><li><a href="/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/#street" data-nav-link data-jump-target="street">Projects</a></li><li><a href="/#lot" data-nav-link data-jump-target="lot">Journal</a></li><li><a href="/#film" data-nav-link data-jump-target="film">Film</a></li><li><a href="/#home" data-nav-link data-jump-target="home">Say hello</a></li><li class="nav__lang"><a class="lang-toggle" href="/zh/journal/memory-that-can-be-corrected/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></li></ul></nav></div></header><main id="main" class="note container"><a class="link" href="/journal/">← Back to the notes</a><h1 id="note-title">Remembering is only half the job.</h1><p class="caption"><a href="https://github.com/mirzatghayrat/arslan#a-second-brain-filterable-by-start-time" target="_blank" rel="noopener">Adapted from Arslan’s public design documentation ↗</a></p><article class="prose"><p>The first benefit of an agent remembering a preference is immediate: you do not have to explain it again. Over time, another question appears. What happens when that preference changes, or the agent misunderstood it from the start?</p>
+<p>Long-term memory turns an interpretation from one conversation into a premise for later tasks. It reduces repetition, but can also repeat an error.</p>
+<h2 id="how-long-should-one-sentence-remain-true">How long should one sentence remain true?</h2>
+<p>Imagine someone saying, “Make this client’s copy more formal.” If the system remembers “the user prefers formal writing,” it may influence the next message to a friend.</p>
+<p>The problem is an expanded scope. A request for one task, a convention within one project and an enduring preference should not automatically share the same lifetime.</p>
+<p>When evaluating a memory, I would first ask where it came from, when it applies and what would make it obsolete. Storage and retrieval make information available. These questions help determine whether it deserves to guide the next action.</p>
+<h2 id="correction-belongs-in-everyday-use">Correction belongs in everyday use</h2>
+<p>Arslan extracts memories from conversations and retrieves them during tasks. Host-agent updates retain superseded entries for restoration. Model-proposed deletions go to an inbox, as do changes that specialist agents propose to shared memory.</p>
+<p>These mechanisms give changes somewhere to be examined. They cannot establish that a memory is correct, but they can make an identified mistake easier to address.</p>
+<p>The effort matters. Correcting one mistaken summary should not require explaining the whole project again. Seeing what changed, restoring an entry and understanding how later tasks will use it are useful criteria for testing the experience.</p>
+<h2 id="history-has-a-cost-too">History has a cost too</h2>
+<p>Keeping old information helps explain change. Letting it re-enter current reasoning can also introduce contradictions. How much to retain, and how clearly to distinguish obsolete from active information, are design choices.</p>
+<p>Arslan’s graph can filter entries by their effective start time. It is not a complete historical replay: deleted entries and in-place edits may leave no recoverable record. A time control should not imply that every earlier state can be restored.</p>
+<p>Deletion raises another question. If a mistaken entry has already influenced other summaries, does removing the original eliminate its later effects? That is a question for further evaluation, not something I would claim the current features have fully answered.</p>
+<h2 id="measure-the-cost-of-correction">Measure the cost of correction</h2>
+<p>I would look beyond the number of stored entries: how soon outdated information is noticed, how much work a correction takes and whether the same misunderstanding returns.</p>
+<p>Those questions bring a second brain closer to the work it is meant to support. It should accumulate understanding while keeping that understanding open to correction.</p>
+</article><nav class="note__nav"><a href="/#lot">← The empty lot</a><a href="/journal/what-building-arslan-changed/">What building Arslan changed about how I think. →</a></nav></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/">Aralem</a><nav class="footer__nav" aria-label="Main navigation"><a href="/#desk">Career</a><a href="/#arslan">Arslan</a><a href="/#street">Projects</a><a href="/#lot">Journal</a><a href="/#film">Film</a><a href="/#home">Say hello</a><a href="/rss.xml">RSS</a></nav><a class="lang-toggle" href="/zh/journal/memory-that-can-be-corrected/" hreflang="zh-CN" lang="zh-CN" data-lang-toggle data-lang-target="zh" aria-label="Switch to Chinese">中文</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · The scenes and character are digitally created. Project screens come from actual development builds.</p><a href="#main">Back to the top ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D-KrrRt4.js"></script></body></html>

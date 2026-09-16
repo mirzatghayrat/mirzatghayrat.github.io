@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>
+      document.documentElement.classList.add('startViewTransition' in document ? 'vt' : 'no-vt');
+      // Rapid navigation can skip the browser transition; navigation itself still succeeds.
+      for (const event of ['pageswap', 'pagereveal']) {
+        addEventListener(event, (e) => {
+          e.viewTransition?.ready.catch(() => {});
+        });
+      }
+    </script><title>用户回来了，增长就发生了吗？ — Mirzat Ghayrat</title><meta name="description" content="从一次行业交流，展开再营销里更难回答的问题：一次转化，有多少是广告真正带来的？"><link rel="canonical" href="https://mirzatghayrat.github.io/zh/journal/chinajoy-2025/"><link rel="alternate" hreflang="en" href="https://mirzatghayrat.github.io/journal/chinajoy-2025/"><link rel="alternate" hreflang="zh-CN" href="https://mirzatghayrat.github.io/zh/journal/chinajoy-2025/"><link rel="alternate" hreflang="x-default" href="https://mirzatghayrat.github.io/journal/chinajoy-2025/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="笔记 — Mirzat Ghayrat" href="/zh/rss.xml"><link rel="sitemap" href="/sitemap-index.xml"><meta name="theme-color" content="#f0ede6"><meta property="og:type" content="website"><meta property="og:site_name" content="Aralem"><meta property="og:locale" content="zh_CN"><meta property="og:title" content="用户回来了，增长就发生了吗？ — Mirzat Ghayrat"><meta property="og:description" content="从一次行业交流，展开再营销里更难回答的问题：一次转化，有多少是广告真正带来的？"><meta property="og:url" content="https://mirzatghayrat.github.io/zh/journal/chinajoy-2025/"><meta property="og:image" content="https://mirzatghayrat.github.io/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Aralem 的数字工作台：夜色中的书桌与亮着屏幕的复古电脑。"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="用户回来了，增长就发生了吗？ — Mirzat Ghayrat"><meta name="twitter:description" content="从一次行业交流，展开再营销里更难回答的问题：一次转化，有多少是广告真正带来的？"><meta name="twitter:image" content="https://mirzatghayrat.github.io/og.jpg"><meta name="twitter:image:alt" content="Aralem 的数字工作台：夜色中的书桌与亮着屏幕的复古电脑。"><link rel="preload" href="/fonts/Inter-Core.woff2" as="font" type="font/woff2" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&display=swap"><noscript><style>
+        .nav__menu {
+          display: none !important;
+        }
+        .nav__list {
+          display: block !important;
+          position: static !important;
+          border: 0 !important;
+        }
+        .nav {
+          position: relative !important;
+          background: var(--ground);
+        }
+        .nav__inner {
+          flex-wrap: wrap;
+        }
+        .nav__list ul {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .s-orbit,
+        .s-filters {
+          display: none !important;
+        }
+        .hero-stage {
+          padding-top: 40px !important;
+        }
+      </style></noscript><link rel="stylesheet" href="/_astro/Base.CR-1sDPd.css"></head><body id="top"><noscript><style>
+        @view-transition {
+          navigation: none;
+        }
+      </style></noscript><a class="skip-link" href="#main">跳到正文</a><header class="nav" data-nav><div class="nav__inner"><a class="nav__brand" href="/zh/">Aralem</a><button class="nav__menu" type="button" data-nav-menu aria-expanded="false" aria-controls="nav-list" aria-label="打开菜单" data-label-open="打开菜单" data-label-close="关闭菜单"><span class="nav__menu-bar" aria-hidden="true"></span><span class="nav__menu-bar" aria-hidden="true"></span></button><nav id="nav-list" class="nav__list" aria-label="主导航"><ul><li><a href="/zh/#desk" data-nav-link data-jump-target="desk">经历</a></li><li><a href="/zh/#arslan" data-nav-link data-jump-target="arslan">Arslan</a></li><li><a href="/zh/#street" data-nav-link data-jump-target="street">作品</a></li><li><a href="/zh/#lot" data-nav-link data-jump-target="lot">笔记</a></li><li><a href="/zh/#film" data-nav-link data-jump-target="film">短片</a></li><li><a href="/zh/#home" data-nav-link data-jump-target="home">打个招呼</a></li><li class="nav__lang"><a class="lang-toggle" href="/journal/chinajoy-2025/" hreflang="en" lang="en" data-lang-toggle data-lang-target="en" aria-label="切换到英文">EN</a></li></ul></nav></div></header><main id="main" class="note container"><a class="link" href="/zh/journal/">← 回到笔记</a><h1 id="note-title">用户回来了，增长就发生了吗？</h1><p class="caption"><a href="https://www.linkedin.com/posts/remerge_we-had-an-incredible-time-at-chinajoy-2025-activity-7360599619803693056-emcn" target="_blank" rel="noopener">改写自ChinaJoy 2025 的工作记录 ↗</a></p><article class="prose"><p>2025 年 ChinaJoy 期间，我和 Remerge 的同事在上海，和应用营销人员、游戏开发者及合作伙伴交流移动增长。借这条工作记录，我想展开一个比“把用户带回来”更具体的问题：用户回来之后，我们凭什么判断增长发生了？</p>
+<h2 id="看见一次转化还没有解释它">看见一次转化，还没有解释它</h2>
+<p>设想一个人本来就打算周末打开某个应用。周五，他看到了广告；周六，他回来购买。广告与购买都发生了，但仅凭这个顺序，我们还不知道没有那次广告，购买会不会照样发生。</p>
+<p>归因让团队按照规则记录广告触点与转化的关系，方便日常观察和优化。增量衡量追问的是另一个层面：相比没有这次投放，多发生了什么。<a href="https://support.google.com/google-ads/answer/14102450?hl=en">Google 对 Conversion Lift 的说明</a>明确区分了这两种结果。</p>
+<p>我在意这个区别，因为它会改变预算讨论的起点。如果把“记录到了”直接理解成“创造了”，一个漂亮的数字就可能替我们跳过最重要的问题。</p>
+<h2 id="最容易回来的人未必最需要提醒">最容易回来的人，未必最需要提醒</h2>
+<p>再营销面对的是已经和产品发生过关系的人。假设其中一部分用户本来就有很强的使用意愿，那么他们的转化表现好，并不能单独说明继续增加触达最划算。</p>
+<p>我更愿意把用户分层看成一组待验证的假设：谁可能因为提醒而改变行为？谁已经准备回来？谁需要的其实是一个产品问题被解决？这些问题不能只靠点击率排列先后。</p>
+<p>这也影响素材的判断。一次点击也许说明提醒抓住了注意力，但落地后的行为，才能帮助我们理解这份注意力有没有走向有价值的使用。</p>
+<h2 id="实验也需要接受追问">实验也需要接受追问</h2>
+<p><a href="https://www.remerge.io/incrementality">Remerge 的增量方法</a>使用随机对照的思路，估计投放带来的额外影响。对我而言，实验的价值在于给判断安排一个参照，而不是给报表增加一个更有说服力的名称。</p>
+<p>参照怎样建立、观察多久、选择什么结果，都影响结论。<a href="https://support.google.com/google-ads/answer/12005564?hl=en">Google 的实验设置文档</a>也把流量分配、周期和预算列为影响研究能力的因素。样本不足时，暂时看不清效果，应当和确认没有效果分开表达。</p>
+<p>还要问一句：这个实验支持的是哪种决策？一次针对特定人群和时段的结果，可以帮助调整那一笔预算；把它扩展成所有人群、所有时段的结论，则需要更多证据。</p>
+<h2 id="回到产品本身">回到产品本身</h2>
+<p>自己开始做应用之后，我更想把增长问题和产品问题放在一起。提醒可以提供一次重新尝试的机会；打开以后是否更容易完成任务、是否有继续使用的理由，仍然需要产品回答。</p>
+<p>因此，我希望一次增长讨论最后能落到具体选择上：继续触达哪一类用户，停止哪一种重复提醒，还是先修复一个让人离开的环节。</p>
+<p>对我来说，衡量的价值正在这里——它应该帮助我们决定下一步把力气用在哪里。</p>
+</article><nav class="note__nav"><a href="/zh/#lot">← 回到空地</a><a href="/zh/journal/connecting-tools-deliberately/">接入一个工具，也是在做一次选择。 →</a></nav></main><footer class="footer container"><div class="footer__row"><a class="footer__wordmark" href="/zh/">Aralem</a><nav class="footer__nav" aria-label="主导航"><a href="/zh/#desk">经历</a><a href="/zh/#arslan">Arslan</a><a href="/zh/#street">作品</a><a href="/zh/#lot">笔记</a><a href="/zh/#film">短片</a><a href="/zh/#home">打个招呼</a><a href="/zh/rss.xml">RSS</a></nav><a class="lang-toggle" href="/journal/chinajoy-2025/" hreflang="en" lang="en" data-lang-toggle data-lang-target="en" aria-label="切换到英文">EN</a></div><div class="footer__row footer__row--small"><p class="footer__small">© 2026 Mirzat Ghayrat · 场景与角色为数字创作；项目画面来自实际开发版本。</p><a href="#main">回到开头 ↑</a></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.D-KrrRt4.js"></script></body></html>
