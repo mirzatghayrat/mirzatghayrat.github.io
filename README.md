@@ -1,7 +1,7 @@
 # Mirzat Ghayrat · ARALEM
 
-**Stay curious. Build to understand.**  
-**保持好奇，动手求证。**
+**Build to understand.**  
+**动手求证。**
 
 A personal website for the things I build, the work I do, and the questions I keep coming back to.
 
