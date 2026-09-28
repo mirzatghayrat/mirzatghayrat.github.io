@@ -5,7 +5,7 @@
 
 A personal website for the things I build, the work I do, and the questions I keep coming back to.
 
-**[Visit the website](https://mirzatghayrat.github.io/)** · **[中文版](https://mirzatghayrat.github.io/zh/)**
+**[Visit the website](https://aralem.dev/)** · **[中文版](https://aralem.dev/zh/)**
 
 ## Inside
 
@@ -20,9 +20,9 @@ The site is arranged as a small online study. Room transitions connect its secti
 
 | English | 中文 |
 | --- | --- |
-| [A user returned. Did growth happen?](https://mirzatghayrat.github.io/journal/chinajoy-2025/) | [用户回来了，增长就发生了吗？](https://mirzatghayrat.github.io/zh/journal/chinajoy-2025/) |
-| [Connecting a tool is a product decision.](https://mirzatghayrat.github.io/journal/connecting-tools-deliberately/) | [接入一个工具，也是在做一次选择。](https://mirzatghayrat.github.io/zh/journal/connecting-tools-deliberately/) |
-| [Remembering is only half the job.](https://mirzatghayrat.github.io/journal/memory-that-can-be-corrected/) | [记住之后，还要能改。](https://mirzatghayrat.github.io/zh/journal/memory-that-can-be-corrected/) |
+| [A user returned. Did growth happen?](https://aralem.dev/journal/chinajoy-2025/) | [用户回来了，增长就发生了吗？](https://aralem.dev/zh/journal/chinajoy-2025/) |
+| [Connecting a tool is a product decision.](https://aralem.dev/journal/connecting-tools-deliberately/) | [接入一个工具，也是在做一次选择。](https://aralem.dev/zh/journal/connecting-tools-deliberately/) |
+| [Remembering is only half the job.](https://aralem.dev/journal/memory-that-can-be-corrected/) | [记住之后，还要能改。](https://aralem.dev/zh/journal/memory-that-can-be-corrected/) |
 
 ## About this repository
 
