@@ -1,0 +1,1 @@
+import{t as e}from"./project-window.DTE0JZ_r.js";var t=location.pathname;addEventListener(`popstate`,()=>{location.pathname!==t&&location.reload()});var n=document.querySelector(`.ps[data-mode="page"]`);n&&e(n,{signal:new AbortController().signal,zh:document.documentElement.lang.startsWith(`zh`),onProjectStep:()=>{}});
