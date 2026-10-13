@@ -12,9 +12,8 @@ A personal website for the things I build, the work I do, and the questions I ke
 - **Work** — apps, games and AI experiments, with project details and screenshots.
 - **Experience** — career chapters, photographs and records.
 - **Notes** — reflections on product decisions, AI systems and mobile growth.
-- **Film** — personal videos presented in the study’s screening room.
 
-The site is arranged as a small online study. Room transitions connect its sections, while individual pages provide direct links to projects and writing. Content is available in English and Chinese; the interface includes keyboard navigation, mobile layouts and reduced-motion support.
+The home page is one particle space: pick who is reading and the route through it rearranges itself, from the portrait to Arslan, the projects, a career file that rewrites itself, the notes and contact. Individual pages provide direct links to projects and writing. Content is available in English and Chinese; the interface includes keyboard navigation, mobile layouts and reduced-motion support.
 
 ## Recent notes
 
@@ -34,7 +33,7 @@ Development source, original media, drafts and local tooling are maintained sepa
 
 ## 关于这里
 
-这里放着我做的应用和游戏、工作经历，以及对产品、AI 和增长的一些思考。网站以一间线上书房展开：可以看作品、翻笔记，也可以停下来看看短片。
+这里放着我做的应用和游戏、工作经历，以及对产品、AI 和增长的一些思考。首页是一片粒子空间：选一个读者身份，路线会重新排列，从肖像到 Arslan、作品、会自己改写的履历、笔记和联系方式。
 
 这个公开仓库用于发布网站的构建结果，不包含开发源码或本地构建环境。笔记中的资料来源会在文章里注明；产品的当前阶段和可用链接见各自页面。
 
