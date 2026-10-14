@@ -1,1 +1,0 @@
-var e=document.getElementById(`jcats`);e&&(e.hidden=!1,e.addEventListener(`click`,t=>{let n=t.target.closest(`button`);if(!n)return;let r=n.dataset.c;e.querySelectorAll(`button`).forEach(e=>e.setAttribute(`aria-pressed`,String(e===n))),document.querySelectorAll(`.notes-list li`).forEach(e=>e.hidden=r!==`all`&&e.dataset.cat!==r)}));
