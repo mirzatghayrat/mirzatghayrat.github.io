@@ -1,1 +1,0 @@
-document.addEventListener(`click`,e=>{let t=e.target?.closest(`a[data-lang-toggle]`);if(!t||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;try{localStorage.setItem(`mirzat-language`,t.dataset.langTarget??`en`)}catch{}let n=new URL(t.href,location.href);location.hash&&!n.hash&&(e.preventDefault(),n.hash=location.hash,location.href=n.href)});
