@@ -1,0 +1,1 @@
+import{t as e}from"./project-window.DTE0JZ_r.js";import{n as t}from"./edge-fade.BPeReuyx.js";t();var n=document.querySelector(`.ps[data-mode="page"]`);n&&e(n,{signal:new AbortController().signal,zh:document.documentElement.lang.startsWith(`zh`),onProjectStep:()=>{}});

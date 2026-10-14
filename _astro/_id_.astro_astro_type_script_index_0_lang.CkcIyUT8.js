@@ -1,1 +1,0 @@
-import{t as e}from"./project-window.DTE0JZ_r.js";var t=document.querySelector(`.ps[data-mode="page"]`);t&&e(t,{signal:new AbortController().signal,zh:document.documentElement.lang.startsWith(`zh`),onProjectStep:()=>{}});
